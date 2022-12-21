@@ -1,0 +1,26 @@
+/* HERO */
+
+.hero {
+  height: 600px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/teams.jpg');
+
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.hero__title {
+  margin: 0 auto 30px;
+  width: 696px;
+  color: $text-white;
+  @include font(44, 900, 60, 0.06);
+  text-transform: uppercase;
+}

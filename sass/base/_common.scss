@@ -1,0 +1,22 @@
+/* Universal classes */
+body {
+  background-color: $text-white;
+  color: $primari-text-color;
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}

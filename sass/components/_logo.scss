@@ -1,0 +1,11 @@
+.logo {
+  display: inline-block;
+
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  @include font(26, null, 31, 0.03);
+}
+
+.logo__text {
+  color: $accent-color;
+}
