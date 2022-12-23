@@ -14,21 +14,16 @@
   margin-bottom: 30px;
 }
 
-.features__icon {
-  width: 70px;
-  height: 70px;
-}
-
 .features__list {
   display: flex;
-  align-items: flex-start;
-  flex-basis: calc((100% - 90px) / 4);
-  margin: 0px;
-}
+  flex-wrap: wrap;
 
-.features__item {
-  width: 270px;
-
+  .features__item {
+    width: 100%;
+    // flex-basis: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
   &:not(:last-child) {
     margin-right: 30px;
   }

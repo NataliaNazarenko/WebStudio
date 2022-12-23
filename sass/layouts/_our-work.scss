@@ -2,6 +2,10 @@
 
 .our-work {
   padding-bottom: 94px;
+
+  @media screen and (min-width: $mobal) {
+    display: none;
+  }
 }
 
 .our-work__title {
