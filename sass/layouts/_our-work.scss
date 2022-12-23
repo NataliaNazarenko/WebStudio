@@ -1,15 +1,15 @@
 /* OUR-WORK */
 
 .our-work {
+  display: none;
   padding-bottom: 94px;
 
-  @media screen and (min-width: $mobal) {
-    display: none;
+  @include desktop {
+    display: block;
   }
 }
 
 .our-work__title {
-  margin-top: 0;
   margin-bottom: 50px;
   min-width: 366px;
   color: $primari-text-color;
@@ -22,8 +22,6 @@
 }
 
 .gallery__item {
-  margin: 0;
-  width: 370px;
   height: 294px;
   position: relative;
 
@@ -36,7 +34,6 @@
   width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
-  margin: 0;
   background-color: rgba(47, 48, 58, 0.8);
   bottom: 0;
   position: absolute;

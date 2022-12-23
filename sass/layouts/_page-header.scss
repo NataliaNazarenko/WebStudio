@@ -1,15 +1,11 @@
 /* PAGE-HEADER */
 
 .page-header {
-  @media screen and (min-width: $desktop) {
-    border: 1px solid #ececec;
-  }
+  border: 1px solid #ececec;
 }
 
 .page-header__container {
-  @media screen and (min-width: $tablet) {
-    @extend %flex-align;
-  }
+  @extend %flex-align;
 }
 
 .page-header__list {

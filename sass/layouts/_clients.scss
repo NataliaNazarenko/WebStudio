@@ -1,36 +1,59 @@
 /* CLIENTS */
 
 .clients {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @include desktop {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .clients__title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  min-width: 264px;
-  padding-top: 94px;
+  margin-bottom: 30px;
+  min-width: 314px;
   color: $primari-text-color;
-  @include font(36, null, 42, 0.03);
+  @include font(28, null, 33, 0.03);
   text-align: center;
+
+  @include desktop {
+    @include font(36, null, 42, 0.03);
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 150px) / 6);
-  margin: 0;
-  padding: 0;
+  gap: 30px;
+
+  &:last-child {
+    margin-right: -30px;
+
+    @include tablet;
+    @include desktop {
+      margin-right: -30px;
+    }
+  }
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__item {
+  flex-basis: calc((100% - 60px) / 2);
+
+  @include tablet {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
   @include flex-align-justify;
-  width: 170px;
+  width: 210px;
   height: 92px;
-
   color: #afb1b8;
   background-color: $text-white;
   border: 1px solid #afb1b8;
@@ -40,6 +63,16 @@
   &:focus {
     color: $accent-color;
     border: 1px solid $accent-color;
+  }
+
+  @include tablet {
+    width: 226px;
+    height: 92px;
+  }
+
+  @include desktop {
+    width: 170px;
+    height: 92px;
   }
 }
 

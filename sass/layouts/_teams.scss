@@ -2,53 +2,72 @@
 
 .teams {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .teams__title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  min-width: 264px;
-  padding-top: 94px;
+  margin-bottom: 30px;
+  min-width: 205px;
   color: $primari-text-color;
-  @include font(36, null, 42, 0.03);
+  @include font(28, null, 33, 0.03);
   text-align: center;
+
+  @include desktop {
+    margin-bottom: 50px;
+    @include font(36, null, 42, 0.03);
+  }
 }
 
 .team-members {
   display: flex;
-  flex-basis: calc((100% - 90px) / 4);
-  padding-bottom: 94px;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &:last-child {
+    @include tablet;
+    @include desktop {
+      margin-right: -30px;
+    }
+  }
 }
 
-.team-members__item:not(:last-child) {
-  margin-right: 30px;
+.team-members__item {
+  @include tablet {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .team-members__grid {
   padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 0;
-
+  padding-bottom: 24px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
+  text-align: center;
 
-.team-members__foto {
-  display: block;
+  @include desktop {
+    padding-bottom: 30px;
+  }
 }
 
 .team-members__name {
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
   color: $primari-text-color;
   @include font(16, 500, 19, 0.03);
-  text-align: center;
 }
 
 .team-members__info {
-  margin: 0;
   color: $title-text-color;
   @include font(16, null, 19, 0.03);
-  text-align: center;
 }

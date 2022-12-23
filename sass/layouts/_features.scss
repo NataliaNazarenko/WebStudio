@@ -1,13 +1,13 @@
 /* FEATURES */
 
 .features {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .features__wrap {
   @include flex-align-justify;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -17,15 +17,25 @@
 .features__list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 
-  .features__item {
-    width: 100%;
-    // flex-basis: calc((100% - 90px) / 4);
-    margin-right: 30px;
-    margin-bottom: 30px;
+  &:last-child {
+    @include tablet;
+    @include desktop {
+      margin-right: -30px;
+    }
   }
-  &:not(:last-child) {
-    margin-right: 30px;
+}
+
+.features__item {
+  width: 100%;
+
+  @include tablet {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
