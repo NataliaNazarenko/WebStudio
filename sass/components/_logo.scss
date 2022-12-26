@@ -3,7 +3,11 @@
 
   color: #000000;
   font-family: Raleway, sans-serif;
-  @include font(26, null, 31, 0.03);
+  @include font(24, null, 28, 0.03);
+
+  @include desktop {
+    @include font(26, null, 31, 0.03);
+  }
 }
 
 .logo__text {

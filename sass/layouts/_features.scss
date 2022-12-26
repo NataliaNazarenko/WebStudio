@@ -18,24 +18,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
-  &:last-child {
-    @include tablet;
-    @include desktop {
-      margin-right: -30px;
-    }
-  }
+  width: 100%;
 }
 
 .features__item {
-  width: 100%;
-
   @include tablet {
     flex-basis: calc((100% - 60px) / 2);
+    min-width: 354px;
   }
 
   @include desktop {
     flex-basis: calc((100% - 120px) / 4);
+    min-width: 270px;
   }
 }
 

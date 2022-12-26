@@ -27,14 +27,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  width: 100%;
 
-  &:last-child {
-    margin-right: -30px;
-
-    @include tablet;
-    @include desktop {
-      margin-right: -30px;
-    }
+  @media screen and (max-width: 479px) {
+    justify-content: center;
   }
 }
 
