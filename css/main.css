@@ -399,6 +399,20 @@ img {
   border: 1px solid #ececec;
 }
 
+.page-header__nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .page-header__nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__nav {
+    display: block;
+  }
+}
+
 .page-header__list {
   display: flex;
   margin-left: 93px;
@@ -436,9 +450,46 @@ img {
   margin-top: 28px;
 }
 
-.contact {
-  display: flex;
+.page-header__button {
+  padding: 0px;
   margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+.page-header__button .icon-close {
+  display: none;
+}
+.page-header__button .is-open .icon-close {
+  display: block;
+}
+.page-header__button .is-open .icon-menu {
+  display: none;
+}
+@media screen and (max-width: 481px) {
+  .page-header__button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__button {
+    display: none;
+  }
+}
+
+.contact {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: block;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contact__item {

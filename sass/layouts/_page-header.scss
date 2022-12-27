@@ -8,6 +8,18 @@
   @extend %flex-align;
 }
 
+.page-header__nav {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    display: block;
+  }
+}
+
 .page-header__list {
   display: flex;
   margin-left: 93px;
@@ -46,9 +58,33 @@
   }
 }
 
-.contact {
-  display: flex;
+.page-header__button {
   margin-left: auto;
+  border: none;
+  background-color: transparent;
+  padding: 10px 0;
+
+  @media screen and (max-width: 481px) {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.contact {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    display: block;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contact__item {
@@ -77,4 +113,27 @@
   &:focus {
     color: $accent-color;
   }
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  top: 0px;
+  left: 0px;
+  padding: 10px 0;
+
+  & .container {
+    height: 100%;
+  }
+}
+
+.mobile-menu__button {
+  display: block;
+  margin-left: auto;
+  margin-right: 0px;
+  border: none;
+  background-color: transparent;
+  padding: 10px 0;
 }
