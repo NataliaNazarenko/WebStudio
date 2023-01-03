@@ -1,8 +1,6 @@
 /* HERO */
 
 .hero {
-  height: 600px;
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -11,16 +9,53 @@
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/teams.jpg');
+    url('../../images/Header-mobile.jpg');
+  @include retina {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/Header-mobile-2x.jpg');
+  }
 
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
+
+  @include tablet {
+    padding-bottom: 118px;
+    padding-top: 118px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/Header-tablet.jpg');
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/Header-tablet-2x.jpg');
+    }
+  }
+
+  @include desktop {
+    height: 600px;
+    max-width: 1600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/teams.jpg');
+    @include retina {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/teams-2x.jpg');
+    }
+  }
 }
 
 .hero__title {
   margin: 0 auto 30px;
-  width: 696px;
+  max-width: 360px;
   color: $text-white;
-  @include font(44, 900, 60, 0.06);
+  @include font(26, 900, 42, 0.06);
   text-transform: uppercase;
+
+  @include tablet {
+    @include font(26, 900, 42, 0.06);
+  }
+
+  @include desktop {
+    max-width: 696px;
+    @include font(44, 900, 60, 0.06);
+  }
 }
