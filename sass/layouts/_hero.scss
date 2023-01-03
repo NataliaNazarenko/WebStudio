@@ -10,6 +10,7 @@
   background-size: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../../images/header-mobile.jpg');
+
   @include retina {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../../images/header-mobile-2x.jpg');
@@ -23,6 +24,7 @@
     padding-top: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../../images/header-tablet.jpg');
+
     @include retina {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../../images/header-tablet-2x.jpg');
@@ -36,6 +38,7 @@
     padding-top: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../../images/teams.jpg');
+
     @include retina {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../../images/teams-2x.jpg');
