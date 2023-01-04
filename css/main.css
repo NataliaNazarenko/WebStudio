@@ -872,6 +872,12 @@ img {
   color: #2196f3;
   border: 1px solid #2196f3;
 }
+@media screen and (max-width: 479px) {
+  .clients__link {
+    width: 200px;
+    height: 92px;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
@@ -1387,6 +1393,7 @@ textarea {
 /* OUR-PROJECTS*/
 .our-projects {
   padding-bottom: 60px;
+  z-index: 1;
 }
 @media screen and (min-width: 1200px) {
   .our-projects {
@@ -1534,7 +1541,7 @@ textarea {
   background-color: #ffffff;
   top: 0px;
   left: 0px;
-  z-index: 1000px;
+  z-index: 1000;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
 }

@@ -63,6 +63,10 @@
     color: $accent-color;
     border: 1px solid $accent-color;
   }
+  @media screen and (max-width: 479px) {
+    width: 200px;
+    height: 92px;
+  }
 
   @include tablet {
     width: 226px;
