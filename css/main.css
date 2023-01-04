@@ -834,6 +834,11 @@ img {
   gap: 30px;
   width: 450px;
 }
+@media screen and (max-width: 479px) {
+  .clients__list {
+    min-width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients__list {
     width: 100%;
