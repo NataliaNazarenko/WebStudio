@@ -12,22 +12,22 @@
   background-size: cover;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/header-mobile.jpg');
+    url(../images/header-mobile.jpg);
 
   @include retina {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/header-mobile-2x.jpg');
+      url(../images/header-mobile-2x.jpg);
   }
 
   @include tablet {
     padding-bottom: 118px;
     padding-top: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/header-tablet.jpg');
+      url(../images/header-tablet.jpg);
 
     @include retina {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/header-tablet-2x.jpg');
+        url(../images/header-tablet-2x.jpg);
     }
   }
 
@@ -37,11 +37,11 @@
     padding-bottom: 200px;
     padding-top: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/teams.jpg');
+      url(../images/teams.jpg);
 
     @include retina {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/teams-2x.jpg');
+        url(../images/teams-2x.jpg);
     }
   }
 }
