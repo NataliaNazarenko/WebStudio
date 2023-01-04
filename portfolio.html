@@ -28,6 +28,11 @@
         <a href="./index.html" lang="en" class="logo link"
           ><span class="logo__text link">Web</span>Studio</a
         >
+        <button type="button" class="page-header__button" aria-expanded="false">
+          <svg width="40" height="40" aria-label="Мобільне меню">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="page-header__nav">
           <ul class="page-header__list list">
             <li class="page-header__item">
@@ -62,6 +67,69 @@
             </a>
           </li>
         </ul>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="container">
+          <div class="mobile-menu__wrap">
+            <div>
+              <button type="button" class="mobile-menu__button">
+                <svg width="40" height="40">
+                  <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+
+              <nav class="mobile-nav">
+                <ul class="mobile-nav__list list">
+                  <li class="mobile-nav__item">
+                    <a href="./index.html" class="mobile-nav__link link mobile-nav__link--current"
+                      >Студія</a
+                    >
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a>
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a href="./contact.html" class="mobile-nav__link link">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div>
+              <div class="mobile-contact__wrap">
+                <ul class="mobile-contact list">
+                  <li class="mobile-contact__item">
+                    <a href="tel:+380961111111" class="mobile-contact__link link">
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+                  <li class="mobile-contact__item">
+                    <a href="mailto:info@devstudio.com" class="mobile-contact__mail link">
+                      info@devstudio.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mobile-socials__wrap">
+                <ul class="mobile-socials list">
+                  <li class="mobile-socials__item">
+                    <a href="" class="mobile-socials__link link"> Instagram </a>
+                  </li>
+                  <li class="mobile-socials__item">
+                    <a href="" class="mobile-socials__link link"> Twitter </a>
+                  </li>
+                  <li class="mobile-socials__item">
+                    <a href="" class="mobile-socials__link link"> Facebook </a>
+                  </li>
+                  <li class="mobile-socials__item">
+                    <a href="" class="mobile-socials__link link"> LinkedIn </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -340,5 +408,56 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop__modal">
+        <button type="button" class="backdrop__button" data-modal-close>
+          <svg class="backdrop__icon">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <form class="form">
+          <h2 class="form__title">Залиште свої дані, ми вам передзвонимо</h2>
+          <div class="form_wrap">
+            <div class="form__field">
+              <label for="name">Ім'я</label>
+              <input class="text" name="name" id="name" />
+              <svg class="form__icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            <div class="form__field">
+              <label for="tel">Телефон</label>
+              <input class="text" name="tel" id="tel" />
+              <svg class="form__icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <div class="form__field">
+              <label for="email">Пошта</label>
+              <input class="email" name="tel" id="email" autocomplete="off" />
+              <svg class="form__icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            <div class="form__textarea">
+              <label for="comment">Коментар</label>
+              <textarea name="comment" id="comment" rows="5" placeholder="Введіть текст"></textarea>
+            </div>
+          </div>
+          <label class="form__label">
+            <input type="checkbox" name="adoption" value="adoption" class="form__checkbox" />
+            <span class="form__element"></span>
+            <span class="form__text">Погоджуюся з розсилкою та приймаю</span>
+            <a href="" class="form__link">Умови договору</a>
+          </label>
+
+          <button class="button forma__button" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

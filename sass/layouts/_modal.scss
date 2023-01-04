@@ -20,9 +20,10 @@
 
 .backdrop__modal {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  width: 95%;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -35,12 +36,12 @@
   }
   @include mobile {
     width: 450px;
-    min-height: 609px;
+    height: 609px;
   }
 
   @include desktop {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 
@@ -94,16 +95,24 @@ textarea {
 }
 
 .form {
-  padding: 0 40px 40px;
+  padding: 0 40px 40px 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.form_wrap {
+  margin-bottom: 20px;
+}
+
 .form__title {
-  @include font(20, null, 23, 0.03);
+  @include font(20, null, 30, 0.03);
   text-align: center;
   color: var(--primari-text-color);
   margin: 0 0 12px;
+
+  @include desktop {
+    @include font(20, null, 23, 0.03);
+  }
 }
 
 .form__field {
@@ -116,7 +125,6 @@ textarea {
 .form__field input {
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 42px;
   outline: none;
   margin: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);

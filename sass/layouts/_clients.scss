@@ -35,7 +35,9 @@
 }
 
 .clients__item {
-  flex-basis: calc((100% - 60px) / 2);
+  @include mobile {
+    flex-basis: calc((100% - 60px) / 2);
+  }
 
   @include tablet {
     flex-basis: calc((100% - 90px) / 3);
@@ -75,5 +77,5 @@
 .clients__icon {
   fill: currentColor;
   width: 106px;
-  height: 160px;
+  height: 60px;
 }

@@ -593,32 +593,33 @@
 
         <form class="form">
           <h2 class="form__title">Залиште свої дані, ми вам передзвонимо</h2>
-          <div class="form__field">
-            <label for="name">Ім'я</label>
-            <input class="text" name="name" id="name" />
-            <svg class="form__icon">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+          <div class="form_wrap">
+            <div class="form__field">
+              <label for="name">Ім'я</label>
+              <input class="text" name="name" id="name" />
+              <svg class="form__icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            <div class="form__field">
+              <label for="tel">Телефон</label>
+              <input class="text" name="tel" id="tel" />
+              <svg class="form__icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <div class="form__field">
+              <label for="email">Пошта</label>
+              <input class="email" name="tel" id="email" autocomplete="off" />
+              <svg class="form__icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            <div class="form__textarea">
+              <label for="comment">Коментар</label>
+              <textarea name="comment" id="comment" rows="5" placeholder="Введіть текст"></textarea>
+            </div>
           </div>
-          <div class="form__field">
-            <label for="tel">Телефон</label>
-            <input class="text" name="tel" id="tel" />
-            <svg class="form__icon">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </div>
-          <div class="form__field">
-            <label for="email">Пошта</label>
-            <input class="email" name="tel" id="email" autocomplete="off" />
-            <svg class="form__icon">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </div>
-          <div class="form__textarea">
-            <label for="comment">Коментар</label>
-            <textarea name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
-          </div>
-
           <label class="form__label">
             <input type="checkbox" name="adoption" value="adoption" class="form__checkbox" />
             <span class="form__element"></span>

@@ -39,6 +39,7 @@
   color: $primari-text-color;
   @include font(14, null, 16, 0.03);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .features__text {
